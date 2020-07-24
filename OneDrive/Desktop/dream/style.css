@@ -41,7 +41,15 @@ h1{
     color: #5e5e5e;
 }
 h2{
+    font-family: "IBMPlexSerif-Bold";
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 60px;
+    color: #5e5e5e;
+}
+h4{
     font-family: "BioRhyme-Bold";
+
 }
 p{
     font-family: "BioRhyme-Light";
@@ -57,9 +65,9 @@ body{
 
 /*-----------------NAV BER-----------------*/
 
-.header{
+#header{
     background-color: rgb(220, 181, 231);
-    margin-bottom: 110px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -71,49 +79,68 @@ body{
 }
 .header {
     height: 100vh;
+    margin-top: 100px;
 }
 #verticle-line{
-    height: 5px;
-    width: 80%;    
-    background-color: #444141;
-    align-content: center;
-    
-    
+    height: 3px;
+    width: 80%; 
+      
+    background-color: #818181;
+    position: relative;
+    position: absolute;
+    align-content: center;    
 }
 .h-banner {
     justify-content: center;
     text-align: center;
-    padding-bottom: 80px;
+    
 }
 
 
 
 .half-width {
     text-align: center;
-    margin: auto;   
+    margin-top: 50px;   
 }
 .half-width-paragraph{
     
     text-align: left;
-    margin-top: 50px;
-    margin-bottom: 30px;
-   
+    margin-top: 100px;
+      
 }
 
 /* --- step --- */
+.works-sec{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.works-sec h4{
+    margin-bottom: 0px;
+}
 
 .step-box{
-    height: 350px;
-    width: 720px;          
+    height: 380px;
+    width: 480px;          
     align-content: left;
 }
 .step-box-text{
+    
     text-align: left;
-    padding-left: 40px;
-    padding-top: 90px;
+    padding-left: 10px;
+    padding-top: 50px;
     position: bottom;
     float: left;
     
+}
+.step-box-text h4{
+    font-family: "BioRhyme-Bold";
+    font-size: 30px;
+    font-weight: bold;
+    
+    padding-bottom: 30px;
+    padding-left: 10px;
 }
 
 .img{
@@ -125,7 +152,7 @@ body{
 /* --- offer section --- */
 
 
-.offer-text h2{
+.offer-text h3{
     font-size: 40px;
     font-weight: bold;
     list-style: 20px;
@@ -133,12 +160,13 @@ body{
     align-content: center;
 }
 .offer-text{
-    padding-top: 110px;
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
 .item {
     text-align: left;
+    padding-left: 20px;
 }
 
 .item-text {
@@ -153,11 +181,15 @@ body{
     margin-top: 30px;
 }
 .owl-item.active.center {
-    width: auto;
+    height: 290px;
+    width: 350;
+    border-radius: 10px;
+    
+    background-color: rgb(246, 212, 255);
     opacity: 1;
 }
 .owl-item.active.center .item>.item-text {
-    opacity: 1
+    opacity: 12;
 }
 .owl-prev, .owl-next {
     position: absolute;
@@ -171,7 +203,7 @@ body{
     right: 0px;
 }
 .owl-prev i,.owl-next i {
-    font-size: 60px;
+    font-size: 30px;
     color: #ffffff;
     background: transparent;
 }
@@ -190,7 +222,7 @@ body{
 /* --- footer --- */
 
 .footer{
-    margin-top: 110px;
+    margin-top: 50px;
     background-color: beige;
 }
 .footer h5{
@@ -224,7 +256,7 @@ body{
     transition: all ease 0.5s;
 }
 .social i:hover {
-    color: #393ceb;
+    color: #ffef93;
     transition: all ease 0.5s;
 }
 .footer-middle{
@@ -233,11 +265,57 @@ body{
 }
 .footer-right{
     margin-top: 50px;
+    margin-bottom: 50px;
     
+}
+.cta{
+    margin-top: 50px;
 }
 .footer p{
     font-family: "BioRhyme-Light";
     font-weight: lighter;
     font-size: 16px;
-    padding-top: 30px;
+    padding-top: 50px;
+}
+        
+  /* --- fixed icon --- */
+
+.a-social-b {
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+.a-social-b a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 10px;
+    line-height: 0px;
+    background-color: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.a-social-b i {
+    font-size: 30px;
+}
+.social-icons a:hover i,
+.a-social-b a:hover i{
+    color: #eba439;
+    transition: all ease 0.5s;
+}
+.social-icons i,
+.a-social-b i {
+    color: #4939ff;
+}
+.social-icons a:hover,
+.a-social-b a:hover {
+    background-color: #000000;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    transition: all ease 0.5s;
 }
