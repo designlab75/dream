@@ -1,0 +1,243 @@
+*/{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/*-----------------font-----------------*/
+
+@font-face{
+    font-family: "IBMPlexSerif-Medium";
+    src: url(../fonts/IBMPlexSerif-Medium.ttf);
+}
+@font-face{
+    font-family: "IBMPlexSerif-Bold";
+    src: url(../fonts/IBMPlexSerif-Bold.ttf);
+}
+@font-face{
+    font-family: "IBMPlexSerif-SemiBold";
+    src: url(../fonts/IBMPlexSerif-SemiBold.ttf);
+}
+@font-face{
+    font-family: "BioRhyme-Bold";
+    src: url(../fonts/BioRhyme-Bold.ttf);
+}
+@font-face{
+    font-family: "BioRhyme-Light";
+    src: url(../fonts/BioRhyme-Light.ttf);
+}
+@font-face{
+    font-family: "BioRhyme-Regular";
+    src: url(../fonts/BioRhyme-Regular.ttf);
+}
+
+/*-----------------body-----------------*/
+
+h1{
+    font-family: "IBMPlexSerif-Bold";
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: #5e5e5e;
+}
+h2{
+    font-family: "BioRhyme-Bold";
+}
+p{
+    font-family: "BioRhyme-Light";
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+    color: #444141;
+}
+
+body{
+    background-color: rgb(255, 234, 234);
+}
+
+/*-----------------NAV BER-----------------*/
+
+.header{
+    background-color: rgb(220, 181, 231);
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bar{
+    background-color: white;
+    display: flex;    
+    justify-content: center;
+
+}
+.header {
+    height: 100vh;
+}
+#verticle-line{
+    height: 5px;
+    width: 80%;    
+    background-color: #444141;
+    align-content: center;
+    
+    
+}
+.h-banner {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+
+
+.half-width {
+    text-align: center;
+    margin: auto;   
+}
+.half-width-paragraph{
+    
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+   
+}
+
+/* --- step --- */
+
+.step-box{
+    height: 350px;
+    width: 720px;          
+    align-content: left;
+}
+.step-box-text{
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 90px;
+    position: bottom;
+    float: left;
+    
+}
+
+.img{
+    width: 45%;
+    height: 45%;
+    float: right;
+}
+
+/* --- offer section --- */
+
+
+.offer-text h2{
+    font-size: 40px;
+    font-weight: bold;
+    list-style: 20px;
+    color: #5e5e5e;
+    align-content: center;
+}
+.offer-text{
+    padding-top: 110px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.item {
+    text-align: left;
+}
+
+.item-text {
+    opacity: 0;
+}
+.item-text h3 {
+    color: #455a64;
+    font-family: "Biorhyme";
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.owl-item.active.center {
+    width: auto;
+    opacity: 1;
+}
+.owl-item.active.center .item>.item-text {
+    opacity: 1
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 35px;
+    background: rgb(196, 15, 15);
+}
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0px;
+}
+.owl-prev i,.owl-next i {
+    font-size: 60px;
+    color: #ffffff;
+    background: transparent;
+}
+.owl-prev,.owl-next {
+    background: transparent;
+}
+
+.owl-prev:hover,.owl-next:hover {
+    background: transparent;
+}
+
+.owl-dots {
+    display: none;
+}
+
+/* --- footer --- */
+
+.footer{
+    margin-top: 110px;
+    background-color: beige;
+}
+.footer h5{
+    font-family: "BioRhyme-Regular";
+    font-weight: medium;
+    font-size: 24px;
+    color: rgb(58, 58, 58);
+
+}
+.footer-left{
+    margin-top: 50px;
+
+}
+.footer-logo{
+    height: 60px;
+    width: 125px;
+}
+.social {
+    width: 30%;
+}
+.social i {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.social i:hover {
+    background-color: #000000;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+.social i:hover {
+    color: #393ceb;
+    transition: all ease 0.5s;
+}
+.footer-middle{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-right{
+    margin-top: 50px;
+    
+}
+.footer p{
+    font-family: "BioRhyme-Light";
+    font-weight: lighter;
+    font-size: 16px;
+    padding-top: 30px;
+}
